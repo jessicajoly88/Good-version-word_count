@@ -4,7 +4,7 @@ require('pry')
 require('launchy')
 
 describe('String#word_count') do
-  it("downcases uppercase letters in the string entered by the user") do
-    expect(("Proud mary is proud").word_count()).to(eq("proud mary is proud"))
-  end
+  it("recognizes the string entered by the user and returns it it into an array") do
+    expect(("Proud Mary").word_count()).to(eq(["proud","mary"]))
+   end 
 end

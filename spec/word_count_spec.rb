@@ -11,3 +11,5 @@ describe('String#word_count') do
     expect(("Proud is proud Mary").word_count("mary")).to(eq(1))
    end 
 end
+
+###

@@ -1,10 +1,15 @@
 
 class String
-  define_method(:word_count) do
+  define_method(:word_count) do |word|
     count = 0
-    new_array=[]  
-  	self.downcase!() 
-  	user_string = self 
-  	user_string.split()	
-  end
+  	self.downcase!()
+  	sentence = self 
+  	sentence = sentence.split()
+      sentence.each() do |element|
+        if element == word
+           count = count.+(1)   
+        end               
+      end   
+   count   	
+  end  	
 end

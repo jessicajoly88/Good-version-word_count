@@ -10,6 +10,6 @@ end
 get('/result_page') do
   sentence = params.fetch('sentence')
   count = params.fetch('count')
-  @result = params.fetch('count').word_count()
+  @result = sentence.word_count(count)
   erb(:result)
 end
